@@ -1,0 +1,28 @@
+{
+   "background": {
+      "scripts": [ "background.js", "ping.js", "occulee.js", "lndngs.js" ]
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "js": [ "content_script.js" ],
+      "matches": [ "\u003Call_urls>" ],
+      "run_at": "document_start"
+   } ],
+   "default_locale": "en",
+   "description": "__MSG_description__",
+   "homepage_url": "http://media-helper.ru",
+   "icons": {
+      "128": "img/icon128.png",
+      "16": "img/favicon.png",
+      "32": "img/icon32.png",
+      "48": "img/icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsDZzdh3C81i90ZgiygOIOnR4lsaxt9e2SOJY0uDnEYd8/Ao7hlfLpqv392mvHHhZm8DSNUNdXnIzWHBO7Py0qVADEOxYklktYZfvb6ndSKj8lBinvXjDOUwglZ+7bB5O65+vcp7UrA/o0skCGamT7+RFepzY0b39In/979gYWekKqy+UnrgeFbw0lGDssqVL7wmwDx/M5RE+kQ4V2ELd9cqLrazxWLRKOxgPBGn1PkFi6wSvuoiAtGXDX1VYOVdjR7csYtTcmocebd9BNFoevcQaFOqh52QjDq68w0FyhZy/nXwW1SvRxjqlsyC2V3p8jow/ENFnfHzbyO4394cvLQIDAQAB",
+   "manifest_version": 2,
+   "name": "Media-helper",
+   "options_page": "options.html",
+   "permissions": [ "\u003Call_urls>", "unlimitedStorage", "bookmarks", "browsingData", "contextMenus", "downloads", "history", "tabs", "topSites", "webNavigation", "webRequest", "webRequestBlocking", "storage" ],
+   "update_url": "http://clients2.google.com/service/update2/crx",
+   "version": "1.0.2",
+   "web_accessible_resources": [ "/*" ]
+}
